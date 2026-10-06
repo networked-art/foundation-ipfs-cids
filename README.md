@@ -4,7 +4,7 @@ A dataset of IPFS content identifiers (CIDs) extracted from NFT token metadata a
 
 ## Data
 
-`token_cids.csv` contains 343,194 tokens with the following columns:
+`token_cids.csv.gz` contains 485,411 tokens with the following columns:
 
 | Column | Description |
 |---|---|
@@ -18,6 +18,8 @@ A dataset of IPFS content identifiers (CIDs) extracted from NFT token metadata a
 All CIDs are extracted from on-chain `tokenURI`, `image`, and `animation_url` fields that resolve to `ipfs://` URIs.
 
 ## Usage
+
+Decompress the dataset with `gzip -dk token_cids.csv.gz`.
 
 Access any CID via an IPFS gateway:
 
